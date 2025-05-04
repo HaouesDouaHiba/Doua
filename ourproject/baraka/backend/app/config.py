@@ -3,7 +3,7 @@ import os
 class Config:
     # MS SQL Server connection string (update with your details)
     SQLALCHEMY_DATABASE_URI = (
-    "mssql+pyodbc://DESKTOP-KB5LPIL\MSSQLSERVER01Baraka?driver=ODBC+Driver+17+for+SQL+Server&trusted_connection=yes"
+    "mssql+pyodbc://DESKTOP-KB5LPIL\MSSQLSERVER01/Baraka?driver=ODBC+Driver+17+for+SQL+Server&trusted_connection=yes"
 )
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
