@@ -1,6 +1,36 @@
-
+/*staling all the site */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;1,100;1,600&display=swap');
+body {
+  background-color:rgba(80, 196, 60, 0.2);
+}
+.section-content{
+  margin: 0 auto;
+  max-width :none;
+  padding:0 20px;
+  font-size: 20 px;
+}
+.section-title{
+  text-align: center;
+  padding: 60px 0 100px;
+  text-transform: uppercase;
+  font-size: 20 px;
+  font-weight: bold;
 
+}
+.section-title::after{
+  content: "";
+  width: 100px;
+  height: 5px;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: var(--border-radius-s);
+  background: #efca53;
+}
+.text{
+  font-size: 20px;
+}
+
+/*nav bar staling */
 .navbar-custom {
   background-color: rgba(64, 144, 26, 0.822); 
   backdrop-filter: blur(6px);
@@ -59,7 +89,6 @@
 .hero-section {
     text-align: center;
     padding: 150px 0 2px 0;
-    background-color: rgba(80, 196, 60, 0.2);
 }
 .hero-section h1 {
     font-size: 48px;
@@ -93,9 +122,48 @@
 
 
 
+/*about us */
+#about h2 {
+  font-size: 2.2rem;
+}
+#about p {
+  font-size: 1.2rem;
+  color: #000000;
+  line-height: 1.8;
+}
+#about ul li {
+  font-size: 1.1rem;
+  color: #000000;
+  line-height: 1.6;
+}
 
+.img-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
 
+.img-card img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+}
+.img-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 128, 0, 0.2);
+}
+/* Animation*/
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 #about{
+
   padding: 100px 0 2px 0;
 }
 
@@ -137,9 +205,8 @@
 
 
 
-.light-background{
-  background-color: rgba(228, 255, 202, 0.822);
-}
+
+
 
 /* تنسيق العنوان والنص تحت العنوان */
 #services .section-title h2 {
@@ -271,18 +338,6 @@
   
 
 
-
-
-
-
-  
-
-
-
-
-
-  
-
 /* 🟢 تنسيق صندوق التبرع الرئيسي لي يكون في الوسط مع ظل وواجهة بيضاء */
 .donation-section {
   max-width: 600px; /* العرض الأقصى 600px */
@@ -338,150 +393,120 @@
 
 
 /* فقرة تقديمية عاطفية في أعلى الصفحة */
-.donation-intro  {
-  font-size: 30
-  px;
-  color: #000000;
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.6;
-  font-weight:400 ;
-}
 
-.donation-title {
-  font-size: 36px;
-  font-weight: bold;
+
+
+
+/* donate*/
+  .donation-section-inalgeria{
+    padding-top: 100px;
+    padding-bottom: 100px;
   
-}
+  }
 
+  .donation-intro {
+    font-size: 20px;
+    color: #444;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  .donation-type-btn {
+    background-color: #e9f7ef;
+    border: 2px solid #198754;
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+  }
+  .donation-type-btn h4 {
+    font-weight: bold;
+    color: #408718;
+  }
+  .donation-type-btn p {
+    color: hsl(0, 27%, 2%);
+  }
+  .donation-type-btn:hover {
+    transform: scale(1.05);
+    background-color: #198754;
+  }
+  .donation-type-btn:hover h4,
+  .donation-type-btn:hover p {
+    color: #fff;
+  }
+  .donation-type-btn.active {
+    background-color: #198754;
+  }
+  .donation-type-btn.active h4,
+  .donation-type-btn.active p {
+    color: #fff;
+  }
+  .donation-section {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #19d12f2d;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  .donation-section .form-label {
+    font-weight: 600;
+    font-size: 16px;
+    color: #333;
+  }
+  .amount-btn {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: 2px solid #1ec80762;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  .amount-btn:hover {
+    background-color: #198754;
+    color: white;
+  }
+  .custom-amount-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #3a5d09;
+    margin-top: 10px;
+  }
+  .payment-info input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #3a5d09;
+    font-size: 16px;
+  }
+  .payment-info {
+    display: none;
+  }
+  .donate-btn {
+    background-color: #157d0a93;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  .donate-btn:hover {
+    background-color: #198754;
+  }
 
-
-/* 🎁 تصميم الإطارات الثلاثة (Monthly, Targeted, General) */
-.donation-type-btn {
-  background-color: #e9f7ef; /* خلفية خضراء فاتحة */
-  border: 2px solid #198754; /* بوردر أخضر */
-  border-radius: 12px;
-  padding: 20px;
-  width: 100%;
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-  cursor: pointer;
-}
-
-.donation-type-btn h4 {
-  font-weight: bold;
-  color: #3cb47c;
-}
-
-.donation-type-btn p {
-  color: #444;
-}
-
-/* ✨ تأثير Hover */
-.donation-type-btn:hover {
-  transform: scale(1.05); /* يكبر شوية */
-  background-color: #198754; /* يتبدل اللون */
-  
-}
-
-.donation-type-btn:hover h4,
-.donation-type-btn:hover p {
-  color: #fff;
-}
-
-/* ✅ الزر النشط */
-.donation-type-btn.active {
-  background-color: #198754;
-  color: #fff;
-}
-
-.donation-type-btn.active h4,
-.donation-type-btn.active p {
-  color: #fff;
-}
-/* 🌟 زر Donate Now */
-.donate-btn {
-  background-color: #39b32be6; /* أخضر */
-  color: #fff;
-  border: none;
-  padding: 12px 30px;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* ظل خفيف */
-}
-.donate-btn:hover{
-  background-color:#198754;
-}
-/*boycott styling */
-
-
-
-.boycott{
-  color: #000000;
-  background: rgba(80, 196, 60, 0.2);
-  padding: 50px ;
-}
-
-
-
-.boycott .boycott-list{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 120px;
-  align-items: center;
-  justify-content: space-around;
-
-}
-.boycott .boycott-list .boycott-item {
-  display: flex;
- flex-direction: column;
- justify-content: space-between;
-  align-items: center;
-}
-.boycott .boycott-list .boycott-item .boycott-img{
-max-width:  83% ;
-aspect-ratio: 0;
-}
-.boycott .boycott-list .boycott-item .name{
-  margin: 12px 0 ;
-  font-size: larger;
-  font-weight: bold;
-}
-.section-content{
-  margin: 0 auto;
-  max-width :none;
-  padding:0 20px;
-  font-size: 20 px;
-}
-.section-title{
-  text-align: center;
-  padding: 60px 0 100px;
-  text-transform: uppercase;
-  font-size: 20 px;
-  font-weight: bold;
-
-}
-.section-title::after{
-  content: "";
-  width: 100px;
-  height: 5px;
-  display: block;
-  margin: 10px auto 0;
-  border-radius: var(--border-radius-s);
-  background: #efca53;
-}
-.text{
-  font-size: 20px;
-}
 /* volateering staling */
 
 
 .volateering-section{
   padding: 120px 0;
-  background: rgb(255, 255, 255);
-
+  
 }
 .volateering-section{
   padding: 50px ;
@@ -567,4 +592,88 @@ legend {
   font-weight: bold;
   text-align: center;
 
+}
+
+/*boycott styling */
+
+.boycott{
+  color: #000000;
+
+  padding: 50px ;
+}
+
+
+
+.boycott .boycott-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 120px;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.boycott .boycott-list .boycott-item {
+  display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+  align-items: center;
+}
+.boycott .boycott-list .boycott-item .boycott-img{
+max-width:  83% ;
+aspect-ratio: 0;
+}
+.boycott .boycott-list .boycott-item .name{
+  margin: 12px 0 ;
+  font-size: larger;
+  font-weight: bold;
+}
+
+ /*contact*/
+ .text{
+  padding-top: 50px;
+}
+.card {
+
+border-radius: 12px;
+}
+.card-shadow {
+  box-shadow: 0 10px 20px rgba(0, 128, 0, 0.1);
+}
+.card-body {
+  padding: 2rem;
+}
+.bi {
+  color: #28a745;
+}
+.card-body h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+button:hover {
+  background-color: #218838;
+  transition: background-color 0.3s ease;
+}
+iframe {
+  border-radius: 12px;
+}
+input, textarea {
+  border-radius: 8px;
+  border: 1px solid #28a745;
+}
+textarea {
+  resize: vertical;
+}
+@media (max-width: 768px) {
+  #contact .row {
+    flex-direction: column;
+  }
+}
+
+#contact .col-md-6 {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact .col-md-6 .card {
+  flex: 1;
 }

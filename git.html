@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AL-BARAKA in alg</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -41,7 +42,7 @@
               <li class="nav-item"><a class="nav-link" href="#volunteering">Volunteering</a></li>
               <li class="nav-item"><a class="nav-link" href="#boycott">Boycott</a></li>
               <li class="nav-item"><a class="nav-link" href="#">News</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 <!--dropdown languages-->
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle btn  ms-lg-3" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -77,6 +78,59 @@
   <section id="about" class="container my-5">
     <h2 class="text-center mb-4 section-title">About Us</h2>
     <div class="row g-4">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <p>
+            Al-Baraka Association is a non-profit organization dedicated to supporting humanitarian and development causes.
+          </p>
+          <ul class="list-unstyled mt-4">
+            <li class="mb-3">
+              <i class="bi bi-calendar3 text-success me-2"></i>
+              Founded in 2015 to respond to urgent humanitarian needs.
+            </li>
+            <li class="mb-3">
+              <i class="bi bi-people-fill text-success me-2"></i>
+              Empowering communities through sustainable development.
+            </li>
+            <li class="mb-3">
+              <i class="bi bi-heart-pulse-fill text-success me-2"></i>
+              Working in health, education, and food security sectors.
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-4">
+            <div class="col-6">
+              <div class="card border-0 img-card animate-on-scroll h-100">
+                <img src="abtus3.jpg" class="card-img-top rounded img-fluid " alt="Image 1" style="object-fit: cover;height: 350px; ">
+              </div>
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="card border-0 img-card animate-on-scroll mb-3 flex-fill">
+  
+           <img src="abtus2.jpg" class="card-img-top rounded img-fluid" alt="Image 2" style="object-fit: cover; height: 170px">
+              </div>
+              <div class="card border-0 img-card animate-on-scroll flex-fill">
+                <img src="abtus1.jpg" class="card-img-top rounded img-fluid " alt="Image 3" style="object-fit: cover; height: 170px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--our vision-->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm custom-card" data-aos="zoom-in">
+            <div class="card-body text-center">
+              <div class="icon mb-3 text-success">
+                <i class="bi bi-people-fill fs-1"></i>
+              </div>
+              <h5 class="card-title">Our Vision</h5>
+              <p class="card-text">
+                We aspire to be a model in sustainable charitable work, inspiring others to join us on our journey toward building a better future for all.
+              </p>
+            </div>
+          </div>
+        </div>
       <!-- Who We Are -->
       <div class="col-md-4">
         <div class="card h-100 shadow-sm custom-card" data-aos="zoom-in">
@@ -124,11 +178,49 @@
       </div>
     </div>
    </section>
+
+   <!-- Team Section -->
+ <section id="team" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class=" section-title">Our Team</h2>
+      <p >Meet the dedicated members behind Al-Baraka Association</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card team-card h-100 shadow-sm text-center p-3">
+          <img src="aa.jpeg" class="rounded-circle mx-auto team-img mb-2" alt="Member 1">
+          <h5 class="fw-bold text-success mb-1">membre1</h5>
+          <p class="text-muted mb-1">President</p>
+          <p class="mb-0">Leading the association with a vision for a better future.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card team-card h-100 shadow-sm text-center p-3">
+          <img src="member2.jpg" class="rounded-circle mx-auto team-img mb-2" alt="Member 2">
+          <h5 class="fw-bold text-success mb-1">membre2</h5>
+          <p class="text-muted mb-1">Communication Manager</p>
+          <p class="mb-0">Responsible for spreading our mission and engaging the public.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card team-card h-100 shadow-sm text-center p-3">
+          <img src="member3.jpg" class="rounded-circle mx-auto team-img mb-2" alt="Member 3">
+          <h5 class="fw-bold text-success mb-1">membre3</h5>
+          <p class="text-muted mb-1">Project Coordinator</p>
+          <p class="mb-0">Coordinates humanitarian projects and ensures smooth execution.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Team Section-->
 <!-- What We do Section -->
 <section id="services" class="services section light-background">
 
-  <div class="container section-title">
-  <h2>What We Do !</h2>
+ 
+  <h2 class="section-title" >What We Do !</h2>
   <p></p>
  </div>
 
@@ -198,15 +290,16 @@
  </div>
 
 </section>
- <!--donate section-->
 
- <section id="donation-section-inalgeria" class="py-5 bg-light">
+<!--donate section-->
+
+ <section id="donation-section-inalgeria" >
   <div class="container">
     <!-- Title -->
     <h2 class="text-center mb-4 section-title">Donate in Algeria</h2>
 
     <div class="text-center mb-5">
-      <p class="lead donation-intro text">
+      <p class=" donation-intro text">
         Support local causes and make a difference in Algeria. Choose your preferred donation type below.
       </p>
     </div>
@@ -272,7 +365,7 @@
        <div class="mb-4">
         <label class="form-label">Choose Payment Method:</label>
         <select class="form-select" id="payment-method">
-          <option value="">-- Select --</option>
+          <option value="">-- Select Payment Method --</option>
           <option value="ccp">CCP (Postal Cheque) </option>
           <option value="bank">Bank Transfer</option>
         </select>
@@ -280,18 +373,12 @@
 
       <!-- CCP Info -->
       <div id="ccp-info" class="payment-info">
-        
           <input type="text" class="form-control mb-2" placeholder="CCP Account Number">
-       
-        
           <input type="text" class="form-control mb-2" placeholder="CCP Account Name">
-       
       </div>
       <!-- bank Info -->
       <div id="bank-info" class="payment-info">
-        
           <input type="text" class="form-control mb-2" placeholder="Bank Account Name">
-        
       </div>
 
       <!-- Donate Button -->
@@ -313,6 +400,7 @@
       <div class="mb-3">
         <label class="form-label">Donation Purpose:</label>
         <select class="form-select">
+           <option value="">-- Select Donation Purpose --</option>
           <option>Feeding</option>
           <option>EID sacrifice</option>
           <option>Drilling wells</option>
@@ -336,7 +424,7 @@
        <div class="mb-3">
         <label class="form-label">Choose Payment Method:</label>
         <select class="form-select" id="payment-method">
-          <option value="">-- Select --</option>
+          <option value="">-- Select Payment Method --</option>
           <option value="ccp">CCP (Postal Cheque) </option>
           <option value="bank">Bank Transfer</option>
         </select>
@@ -388,7 +476,7 @@
        <div class="mb-3">
         <label class="form-label">Choose Payment Method:</label>
         <select class="form-select" id="payment-method">
-          <option value="">-- Select --</option>
+          <option value="">-- Select Payment Method --</option>
           <option value="ccp">CCP (Postal Cheque) </option>
           <option value="bank">Bank Transfer</option>
         </select>
@@ -419,73 +507,7 @@
   </div>
 </section>
  
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
- 
-
-<script>
- AOS.init({
-  duration: 1000,
-  once: true
- });
-
-</script>
-
-
-<script>
-   document.addEventListener("DOMContentLoaded", function () {
-    // Toggle donation section
-    document.querySelectorAll('.donation-type-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const type = btn.dataset.type;
-  
-        document.querySelectorAll('.donation-section').forEach(sec => sec.style.display = 'none');
-        document.getElementById(type).style.display = 'block';
-  
-        document.querySelectorAll('.donation-type-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-      });
-    });
-
-  
-    // Toggle payment info
-    const paymentMethod = document.getElementById("payment-method");
-    const ccpInfo = document.getElementById("ccp-info");
-    const bankInfo = document.getElementById("bank-info");
-  
-    ccpInfo.style.display = "none";
-    bankInfo.style.display = "none";
-  
-    paymentMethod.addEventListener("change", function () {
-      ccpInfo.style.display = "none";
-      bankInfo.style.display = "none";
-  
-      if (this.value === "ccp") {
-        ccpInfo.style.display = "block";
-      } else if (this.value === "bank") {
-        bankInfo.style.display = "block";
-      }
-    });
-  });
-
-  
-    // Set amount input when clicking amount buttons
-    const amountButtons = document.querySelectorAll('.amount-btn');
-    const customAmountInput = document.getElementById('custom-amount');
-  
-    amountButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const amount = button.getAttribute('data-amount');
-        customAmountInput.value = amount;
-  
-        // Highlight selected amount
-        amountButtons.forEach(btn => btn.classList.remove('selected'));
-        button.classList.add('selected');
-      
-      });
-    });
-  </script>
-
-     <!--volunteering section-->
+   <!--volunteering section-->
 <section class="volateering-section" id="volunteering">
   <div class="volateering-info">
       <h2 class="section-title">Volunteering Opportunities</h2>
@@ -537,8 +559,10 @@
                   </div>
                   <div class="input-box">
                       <label for="experiance">Have you tried that before?(if yes tell us about your experience)</label>
-                      <textarea minlength="10" maxlength="1000"  placeholder="Please share your experience..."> </textarea>
+                    
+                      <textarea id="message" minlength="10" maxlength="1000"  placeholder="Please share your experience..."> </textarea>
                   </div>     
+                  
               </fieldset>       
               <button class="save-info" type="submit"> Save</button>  
           </form>
@@ -551,7 +575,7 @@
 
             <section class="boycott" id ="boycott">
               <h2 class="section-title">Boycott Now</h2>
-              <p class="text">To boycott Al Baraka products, please contact our customer service team by email at  <a href="mailto:customer@albaraka.com">customer@albaraka.com</a> or by phone at 0123456789. We will be happy to help you create a strong boycott campaign. </p>
+              <p class="text">The boycott of Israeli products is a peaceful means used by many individuals and organizations worldwide to pressure the Israeli occupation in support of Palestinian rights. This boycott aims to reduce economic support that funds colonial policies and ongoing violations. It is part of a broader movement known as the Boycott, Divestment, and Sanctions (BDS) campaign, which calls for an end to the occupation and respect for human rights and international law. </p>
               <br><br>
               <div class="boycott-content">
                   <ul class="boycott-list">
@@ -595,12 +619,81 @@
               </div>
               
           </section> 
+           <!-- contact Us -->
+<section class="contact" id ="contact">         
+    <div class="text-center mb-5">
+      <h2 class="section-title">Contact Us</h2>
+    </div>
+
+    <!-- الثلاث إطارات الصغيرة (الهاتف، الإيميل، العنوان) -->
+    <div class="row mb-5 text-center">
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm p-3">
+          <i class="bi bi-telephone-fill text-success fs-2 mb-3"></i>
+          <h5 class="card-title">Phone Number</h5>
+          <p class="card-text">+123 456 7890</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm p-3">
+          <i class="bi bi-envelope-fill text-success fs-2 mb-3"></i>
+          <h5 class="card-title">Email Address</h5>
+          <p class="card-text">albaraka@gmail.com</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm p-3">
+          <i class="bi bi-geo-alt-fill text-success fs-2 mb-3"></i>
+          <h5 class="card-title">Address</h5>
+          <p class="card-text">Algeria</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- نموذج الرسالة -->
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card shadow-sm p-4">
+          <h5 class="fw-bold mb-3">Get In Touch</h5>
+          
+            <div class="mb-3">
+              <label for="userName" class="form-label">Name : </label>
+              </label>
+              <input type="text" class="form-control" id="userName" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+              <label for="userEmail" class="form-label">Email :</label>
+              <input type="email" class="form-control" id="userEmail" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+              <label for="userMessage" class="form-label">Your Message :</label>
+              <textarea class="form-control" id="userMessage" rows="4" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Send Message</button>
+          
+        </div>
+      </div>
+<br><br> <br>
+      <!-- الخريطة -->
+      <div class="col-md-6">
+        <div class="card shadow-sm p-4">
+          <h5 class=" fw-bold">Our Location</h5>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6712278.8972032145!2d-2.227478027343768!3d34.768691457552805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z2KzZhdi52YrYp9iqINin2YTYqNix2YPYqQ!5e0!3m2!1sfr!2sdz!4v1746002609548!5m2!1sfr!2sdz" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
  
-       
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+          <script src="dou.js"></script>
     
 </body>
 </html>
-
-</body>
-</html>
+ 
+ 
